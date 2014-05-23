@@ -1,0 +1,9 @@
+{
+    "name": "lortnus/ezc",
+    "description": "eZ Components",
+    "version": "2009.2.1",
+    "require": {
+        "php": ">=5.2.1"
+    }
+}
+

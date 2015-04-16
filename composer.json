@@ -1,7 +1,6 @@
 {
     "name": "bmdevel/ezc",
     "description": "eZ Components",
-    "version": "1.0.0",
     "require": {
         "php": ">=5.2.1"
     }

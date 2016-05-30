@@ -1,9 +1,13 @@
 {
-    "name": "lortnus/ezc",
+    "name": "bmdevel/ezc",
     "description": "eZ Components",
-    "version": "2009.2.1",
     "require": {
         "php": ">=5.2.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
 

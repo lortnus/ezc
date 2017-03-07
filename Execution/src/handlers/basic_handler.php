@@ -30,11 +30,11 @@ class ezcExecutionBasicErrorHandler implements ezcExecutionErrorHandler
      * should write your own class that implements the ezcExecutionErrorHandler
      * interface and use that as parameter to {@link ezcExecution::init()}
      *
-     * @param Exception $e
+     * @param Exception|Throwable $e
      *
      * @return void
      */
-    static public function onError( Exception $e = null )
+    static public function onError( $e = null )
     {
         echo <<<END
 This application stopped in an unclean way. Please contact the site

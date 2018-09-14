@@ -27,9 +27,9 @@ interface ezcExecutionErrorHandler
      * situation (uncaught exception or fatal error) happens.  It accepts one
      * default parameter in case there was an uncaught exception.
      *
-     * @param Exception $e 
+     * @param Exception|Throwable $e 
      * @return void
      */
-    static public function onError( Exception $e = null );
+    static public function onError( $e = null );
 }
 ?>

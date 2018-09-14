@@ -176,10 +176,10 @@ class ezcExecution
      * This method has to be public otherwise PHP can not call it, but you
      * should never call this method yourself.
      *
-     * @param Exception $e
+     * @param Exception|Throwable $e
      * @return void
      */
-    static public function exceptionCallbackHandler( Exception $e )
+    static public function exceptionCallbackHandler( $e )
     {
         self::$cleanExit = true;        
         call_user_func( array( self::$callbackClassName, 'onError' ), $e );

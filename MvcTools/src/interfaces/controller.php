@@ -155,8 +155,11 @@ abstract class ezcMvcController
      */
     public static function createActionMethodName( $action )
     {
-        $actionMethod = 'do' . preg_replace( '@[^A-Za-z]@', '', preg_replace( '@[A-Za-z]+@e', 'ucfirst( "\\0" )', $action ) );
-        return $actionMethod;
+        $capitalizedAction = preg_replace_callback('@[A-Za-z]+@', function ($matches) {
+            return ucfirst($matches[0]);
+        }, $action);
+
+        return 'do' . preg_replace( '@[^A-Za-z]@', '', $capitalizedAction);
     }
 
     /**

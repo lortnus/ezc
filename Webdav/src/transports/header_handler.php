@@ -297,7 +297,7 @@ class ezcWebdavHeaderHandler
                     case 'response':
                     case 'algorithm':
                     case 'opaque':
-                        $res->$matchSet[1] = $matchSet[2];
+                        $res->{$matchSet[1]} = $matchSet[2];
                         break;
                     // Ususally clients should not quote qop and nc, however, we check is some do
                     case 'qop':
